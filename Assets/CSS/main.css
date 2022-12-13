@@ -11,12 +11,31 @@
    margin: 0;
    box-sizing: border-box;
    scroll-behavior: smooth;
-   font-family: Montserrat, Arial, Helvetica, sans-serif;
+   font-family: Bebas, Montserrat, Arial, Helvetica, sans-serif;
    font-weight: 700;
    
-
  }
 
+
+
+ h1{
+  font-size: 8rem;
+  text-transform: uppercase;
+  /* text-decoration: wavy; */
+  
+ }
+
+ h2{
+  font-size: 6rem;
+ }
+
+ h3{
+  font-size: 4rem;
+ }
+
+ h4{
+  font-size: 2rem;
+ }
 
 
 body {
@@ -24,22 +43,164 @@ body {
       rgba(222, 226, 228, 0.25) 0%,
       rgba(60, 58, 59, 0.25) 80%,
       rgba(1, 0, 0, 0.25) 100%);
+      color: white;
       
 }
 
 body {
   background-color: black;
 }
+/* ........................Top Navagation Bar Large Screen............ */
 
-.navTop {
+@media (width >= 768px) {
+  
+
+    .navTop {
+      border: 2px solid red;
+      display: flex;
+      justify-content: center;
+      justify-items: center;
+      align-items: center;
+      position: relative;
+
+    }
+    ul {
+      display: flex;
+      display: flex;
+      justify-content: space-around;
+      justify-items: center;
+      align-items: center;
+      flex-flow: wrap;
+      gap: 8rem;
+    }
+    ul:nth-child(1){
+      margin-left: 8rem;
+      color: red;
+    }
+
+    .navTop li {
+      display: flex;
+      color: orange;
+    }
+
+    /* .hamburger-menu {
+      visibility: hidden;
+      position: absolute;
+      
+    } */
+
+}
+
+/* ........................Top Navagation Bar Cell Phone Screen............ */
+
+
+  
+
+  /* #fullNav {
+    visibility: hidden;
+    position: absolute;
+
+  } */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: red; */
+  color: white;
+}
+
+.logo {
+  font-size: 1.5rem;
+  margin: .5rem;
+}
+
+.navbar-links ul{
+  margin: 0;
+  padding: 0;
   display: flex;
   
 }
 
-.landing {
-  min-height: 100vh;
-  width: auto;
+.n-links {
+  list-style: none;
 }
+
+.navbar-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+  display:block;
+}
+
+.navbar-links li:hover{
+  background-color: gray;
+}
+
+
+
+
+  .hamburger-menu {
+   position:absolute;
+   top: .75rem;
+   right: 1rem;
+   display: none;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 30px;
+   height: 21px;
+    
+  }
+
+  .hamburger-menu .hamlink {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  @media (width < 768px) {
+    .hamburger-menu {
+      display: flex;
+    }
+
+    .navbar-links {
+      display: none;
+      width: 100%;
+    }
+
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .navbar-links ul {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .navbar-links li {
+      text-align: center;
+    }
+
+    .navbar-links li a {
+      padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+      display: flex;
+    }
+
+} 
+
+ 
+
+
+    
+  
+
+}
+
+
 
 .youdiv {
   
@@ -56,12 +217,12 @@ body {
    
 
   }
-  
+  /* ...................animated on scroll css actions....................... */
   .hidden {
     opacity: 0;
-    transition: all 2s;
+    transition: all 1.5s;
     transform: translateX(-100%);
-
+    filter: blur(5px);
   }
   
   .show {
@@ -70,15 +231,34 @@ body {
     transform: translateX(0);
   }
 
-  .card:nth-child(2) {
+ 
+ 
+  .speed:nth-child(2) {
     transition-delay: 200ms;
   }
-  .card:nth-child(3) {
+  .speed:nth-child(3) {
     transition-delay: 400ms;
+    
   }
-  .card:nth-child(4) {
+  .speed:nth-child(4) {
     transition-delay: 600ms;
   }
-  .card:nth-child(5) {
+  .speed:nth-child(5) {
     transition-delay: 800ms;
   }
+
+/*................Project Cards.............*/
+
+.card-container {
+  display: flex;
+  
+}
+
+.card {
+  margin-right: 4rem;
+ 
+  width: 30vw;
+  height: 40vh;
+  background-color: red;
+}
+
