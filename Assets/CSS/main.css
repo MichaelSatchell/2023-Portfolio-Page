@@ -286,3 +286,48 @@ body {
   background-color: red;
 }
 
+.textTest {
+  
+}
+
+.wise {
+  width: 5vw;
+  height: auto;
+  
+  border-radius: 5px;
+  position: sticky;
+  left: 90%;
+  top: 80%;
+  z-index: 3;
+}
+
+.avatar {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+  
+  
+}
+.quoteBox{
+  width: 30vw;
+  height: auto;
+  top: 68%;
+  left: 70%;
+  translate: (-50%, -50%);
+  position: sticky;
+  margin-right: 1rem;
+}
+#returnQuote {
+  color: red;
+  left: 50%;
+  position: absolute;
+ 
+}
+
+#helloWorld {
+  
+  opacity: .01;
+  bottom: 30%;
+  position: absolute;
+  z-index: 4;
+}
