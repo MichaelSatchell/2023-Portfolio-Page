@@ -337,6 +337,9 @@ align-items: center;
   color: black;
   
 }
+.visitBtn:nth-child(1) {
+  margin-right: .5rem;
+}
 
 
 /*..
