@@ -13,11 +13,17 @@
    scroll-behavior: smooth;
    font-family: Bebas, Montserrat, Arial, Helvetica, sans-serif;
    font-weight: 700;
+   overflow-x: hidden;
    
  }
 
+a {
+  text-decoration: none;
+  color: white;
+}
 
-
+ 
+ 
  h1{
   font-size: 8rem;
   text-transform: uppercase;
@@ -225,7 +231,7 @@ body {
     place-items: center;
     align-content: center;
     min-height: 100vh;
-   
+    
 
   }
   /* ...................animated on scroll css actions....................... */
@@ -271,57 +277,111 @@ body {
     transition-delay: 800ms;
   }
 
+.speed2 {
+  transition-delay: 200ms;
+}
+
 /*................Project Cards.............*/
 
 .card-container {
   display: flex;
+  flex-direction: column;
   
 }
 
 .card {
-  margin-right: 4rem;
- 
+  margin: 4rem;
   width: 30vw;
   height: 40vh;
   background-color: red;
-}
-
-.textTest {
+  position: relative;
+  
   
 }
+
+.cardInfo {
+  
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.cardTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .cardBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 38rem;
+  left: 38rem;
+  position: absolute;
+} */
+
+.visitBtn {
+  border: 2px solid white;
+  font-size: 1.1rem;
+  background-color: transparent;
+  border-radius: 5%;
+  padding: .5rem;
+  color: white;
+  transition: color 1s ease-in-out, box-shadow 1s ease-in-out;
+}
+
+.visitBtn:hover {
+  box-shadow: inset 100px 0 0 0 white;
+  color: black;
+  
+}
+
+
+/*..
+
+
+/*...........Satchmo Picard Avatar..........*/
 
 .wise {
   width: 5vw;
   height: auto;
-  
+  overflow: hidden;
   border-radius: 5px;
   position: sticky;
   left: 90%;
-  top: 80%;
+  top: 20%;
   z-index: 3;
+  border: 2px solid green;
 }
 
 .avatar {
   object-fit: contain;
   width: 100%;
   height: auto;
+ 
   
   
 }
 .quoteBox{
   width: 30vw;
-  height: auto;
-  top: 68%;
-  left: 70%;
+  height: 20vh;
+  top: 20%;
+  left: 50%;
   translate: (-50%, -50%);
   position: sticky;
   margin-right: 1rem;
+  
+  border: 2px solid white;
+  
 }
 #returnQuote {
   color: red;
-  left: 50%;
+  left: 10%;
   position: absolute;
- 
+  z-index: 5;
+  font-size: 1rem;
 }
 
 #helloWorld {
@@ -330,4 +390,56 @@ body {
   bottom: 30%;
   position: absolute;
   z-index: 4;
+  
 }
+
+.blankText {
+  color: transparent;
+  font-size: 16rem;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: white;
+  /* -webkit-text-fill-color: black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.subTitle {
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 8.2rem;
+  width: 100vw;border: 
+  2px solid red;
+  bottom: 10rem;
+  position: relative;
+}
+
+video {
+  position: absolute;
+  border: 2px solid red;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bgLogo {
+  width: 50%;
+  object-fit: cover;
+  
+  
+}
+
+.boxLogo {
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  
+}
+
+video {
+  visibility: hidden;
+}
+
