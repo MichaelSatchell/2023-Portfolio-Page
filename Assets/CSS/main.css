@@ -62,7 +62,7 @@ body {
   
 
     .navTop {
-      border: 2px solid red;
+      /* border: 2px solid red; */
       display: flex;
       justify-content: center;
       justify-items: center;
@@ -212,7 +212,6 @@ body {
  
 
 
-    
   
 
 
@@ -295,8 +294,7 @@ body {
   height: 40vh;
   background-color: red;
   position: relative;
-  
-  
+    
 }
 
 .cardInfo {
@@ -336,65 +334,17 @@ align-items: center;
   box-shadow: inset 100px 0 0 0 white;
   color: black;
   
+  
 }
 .visitBtn:nth-child(1) {
   margin-right: .5rem;
 }
 
 
-/*..
 
 
-/*...........Satchmo Picard Avatar..........*/
 
-.wise {
-  width: 5vw;
-  height: auto;
-  overflow: hidden;
-  border-radius: 5px;
-  position: sticky;
-  left: 90%;
-  top: 20%;
-  z-index: 3;
-  border: 2px solid green;
-}
 
-.avatar {
-  object-fit: contain;
-  width: 100%;
-  height: auto;
- 
-  
-  
-}
-.quoteBox{
-  width: 30vw;
-  height: 20vh;
-  top: 20%;
-  left: 50%;
-  translate: (-50%, -50%);
-  position: sticky;
-  margin-right: 1rem;
-  
-  border: 2px solid white;
-  
-}
-#returnQuote {
-  color: red;
-  left: 10%;
-  position: absolute;
-  z-index: 5;
-  font-size: 1rem;
-}
-
-#helloWorld {
-  
-  opacity: .01;
-  bottom: 30%;
-  position: absolute;
-  z-index: 4;
-  
-}
 
 .blankText {
   color: transparent;
@@ -414,15 +364,15 @@ align-items: center;
   justify-content: center;
   align-items: center;
   font-size: 8.2rem;
-  width: 100vw;border: 
-  2px solid red;
+  width: 100vw;
+  /* border: 2px solid red; */
   bottom: 10rem;
   position: relative;
 }
 
 video {
   position: absolute;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -446,3 +396,98 @@ video {
   visibility: hidden;
 }
 
+/*............Footer Stylings.........*/
+
+footer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  
+}
+
+.icons {
+  left: 5%;
+  position: relative;
+  margin-left: 2rem;
+}
+.icons:hover {
+  transform: translateX(2px) rotate(360deg);
+}
+/*...........Satchmo Picard Avatar..........*/
+
+.wise {
+  width: 5vw;
+  height: auto;
+  overflow: hidden;
+  border-radius: 5px;
+  position: sticky;
+  left: 83%;  
+  z-index: 3;
+  
+}
+
+.avatar {
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+}
+/* .avatar:hover {
+  transform: translateX(2px) rotate(360deg);
+} */
+.quoteBox{
+  width: 30vw;
+  height: 20vh;
+  margin-right: 1rem;
+  color: white;
+  border: 2px solid white;
+  z-index: 6;
+}
+#returnQuote {
+  color: white;
+  left: 10%;
+  /* position: absolute; */
+  font-size: 1.2rem;
+}
+
+#helloWorld {
+  
+  opacity: .01;
+  bottom: 30%;
+  position: absolute;
+  z-index: 4;
+  background-color: red;
+  
+}
+
+.quotePlacement {
+  color: white;
+  position: absolute;
+  left: 60%;
+  bottom: -340%;
+  font-size: 1.2rem;
+}
+
+.selfie {
+  
+  width: 100%;
+    
+  
+}
+
+.selfContained {
+  
+  width: 40vw;
+  height: auto;
+  
+}
+
+.resize {
+  bottom: 50%;
+  position: relative;
+  
+}
+
+.outline {
+  border: 2px solid white;
+}
