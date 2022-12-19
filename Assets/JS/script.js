@@ -35,6 +35,11 @@ const hiddenElements2 = document.querySelectorAll('.hidden2');
 hiddenElements2.forEach((el) => observer.observe(el));
 
 
+//....changes the color of the CTA Scroll....//
+
+document.getElementById("pulse").style.color = "red";
+
+//............Add easterEgg..............//
 let easterEggNote = ['You found my Easter Egg. Here is your reward']
 /* jokes and quotes that will be randomized */
 let wisdom = [
@@ -85,3 +90,9 @@ randomWisdom = () => {
 function quoteReset() {
     document.getElementsById("hellowWorld").reset();
   }
+
+
+
+  //.........change the website cursor....//
+
+  
